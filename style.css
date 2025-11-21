@@ -1,0 +1,162 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background: #fff;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #2f6622;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.hero h1 span {
+  display: block;
+  font-size: 3rem;
+}
+
+/* Tagline Section */
+.tagline {
+  padding: 40px 20px;
+}
+
+.tagline-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tagline-images img {
+  width: 60px;
+  height: auto;
+}
+
+.tagline h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2f6622;
+}
+
+.tagline h2 span {
+  font-family: "Brush Script MT", cursive;
+  font-size: 2.6rem;
+  color: #408c1f;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.feature {
+  background: #fff;
+  border: 3px solid #2f6622;
+  border-radius: 12px;
+  width: 280px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.feature p {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: #2f6622;
+  color: #fff;
+  padding: 25px 15px;
+}
+
+footer p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h1 span {
+    font-size: 2.4rem;
+  }
+
+  .tagline h2 {
+    font-size: 1.6rem;
+  }
+
+  .tagline h2 span {
+    font-size: 2rem;
+  }
+
+  .feature {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero h1 span {
+    font-size: 2rem;
+  }
+
+  .tagline-images img {
+    width: 45px;
+  }
+
+  .tagline h2 {
+    font-size: 1.4rem;
+  }
+
+  .features {
+    padding: 20px 10px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
