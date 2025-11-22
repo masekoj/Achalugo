@@ -179,6 +179,7 @@ footer p {
   .footer-font {
     font-family:Arial, Helvetica, sans-serif;
     background-color: #132d0c;
+    font-size: 2.5rem;
   }
 
 /* === Floating Contact Buttons (Classic Glow Style) === */
@@ -253,6 +254,7 @@ footer p {
     height: 50px;
   }
 }
+
 
 
 
