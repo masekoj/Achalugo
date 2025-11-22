@@ -179,7 +179,7 @@ footer p {
     background-color: #132d0c;
   }
 
-/* === Floating Contact Buttons (Animated Classic Style) === */
+/* === Floating Contact Buttons (with working fade-in) === */
 .floating-contact {
   position: fixed;
   bottom: 25px;
@@ -188,12 +188,9 @@ footer p {
   flex-direction: column;
   gap: 18px;
   z-index: 9999;
-  animation: floatIn 0.9s ease-out forwards;
-  opacity: 0;
-  transform: translateY(40px);
 }
 
-/* Each button */
+/* Buttons default state */
 .float-btn {
   width: 60px;
   height: 60px;
@@ -203,19 +200,18 @@ footer p {
   align-items: center;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
   text-decoration: none;
-  background: linear-gradient(135deg, #555, #333);
   transition: all 0.3s ease;
   position: relative;
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 0;                    /* Hidden initially */
+  transform: translateY(30px);   /* Slide-up offset */
 }
 
-/* WhatsApp gradient */
+/* WhatsApp */
 .whatsapp {
   background: linear-gradient(135deg, #25D366, #128C7E);
 }
 
-/* Call gradient */
+/* Call */
 .call {
   background: linear-gradient(135deg, #007BFF, #0044AA);
 }
@@ -228,33 +224,13 @@ footer p {
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
 }
 
-/* Glowing hover */
+/* Hover glow */
 .float-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
 }
 
-/* Fade & Slide Animations */
-@keyframes floatIn {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Animate each icon separately for staggered effect */
-.floating-contact .float-btn:nth-child(1) {
-  animation: iconFadeIn 0.8s 0.4s ease-out forwards;
-}
-
-.floating-contact .float-btn:nth-child(2) {
-  animation: iconFadeIn 0.8s 0.7s ease-out forwards;
-}
-
+/* === Animation Keyframes === */
 @keyframes iconFadeIn {
   0% {
     opacity: 0;
@@ -266,7 +242,16 @@ footer p {
   }
 }
 
-/* Responsive */
+/* Trigger animations in order */
+.floating-contact .float-btn:nth-child(1) {
+  animation: iconFadeIn 0.8s 0.3s ease-out forwards;
+}
+
+.floating-contact .float-btn:nth-child(2) {
+  animation: iconFadeIn 0.8s 0.6s ease-out forwards;
+}
+
+/* === Responsive === */
 @media (max-width: 600px) {
   .floating-contact {
     bottom: 15px;
@@ -278,6 +263,8 @@ footer p {
     height: 50px;
   }
 }
+
+
 
 
 
