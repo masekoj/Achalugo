@@ -265,6 +265,51 @@ footer p {
 }
 
 
+  /* Basic Reset/Setup */
+.sausage-showcase {
+    /* Optional: Sets up a container for centering */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.sausage-container {
+    /* Limits the maximum width of the image container */
+    max-width: 350px; /* Adjust this value to your preferred max size */
+    width: 90%; /* Ensures it takes 90% of the screen width on smaller devices */
+    margin: 0 auto; /* Centers the figure element */
+    padding: 10px;
+    background-color: #ffffff; /* Use a white background if the original image was on white */
+    border-radius: 8px; /* Soft edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Centers the caption */
+}
+
+.sausage-image {
+    /* Key to Responsiveness: ensures the image never overflows its container */
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes any extra space below the image */
+}
+
+.sausage-description {
+    font-family: sans-serif;
+    font-size: 0.95em;
+    color: #333;
+    padding-top: 10px;
+    font-style: italic;
+}
+
+/* Optional: Media Query for very small screens (e.g., older phones) */
+@media (max-width: 400px) {
+    .sausage-container {
+        padding: 5px;
+        width: 100%;
+    }
+}
+
+
+
 
 
 
