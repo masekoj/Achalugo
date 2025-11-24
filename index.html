@@ -8,6 +8,36 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+  body {
+    margin: 0;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .dangling-image {
+    width: 60%;
+    max-width: 300px;
+    animation: swing 3s ease-in-out infinite alternate;
+    transform-origin: top center;
+  }
+
+  @keyframes swing {
+    0% { transform: rotate(4deg); }
+    100% { transform: rotate(-4deg); }
+  }
+
+  @media (max-width: 600px) {
+    .dangling-image {
+      width: 80%;
+      max-width: 220px;
+    }
+  }
+</style>
 </head>
 <body class="text">
   <!-- Header -->
@@ -85,6 +115,7 @@
 
 </body>
 </html>
+
 
 
 
