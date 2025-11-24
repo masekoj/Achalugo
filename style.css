@@ -300,13 +300,8 @@ footer p {
     font-style: italic;
 }
 
-/* Optional: Media Query for very small screens (e.g., older phones) */
-@media (max-width: 400px) {
-    .sausage-container {
-        padding: 5px;
-        width: 100%;
-    }
-}
+
+
 
 
 
