@@ -266,21 +266,8 @@ footer p {
 
 
  
-.sausage {
-  /* Deep reddish-pink sausage color with faint gradient and a thin casing highlight */
-  fill: url(#sausageGradient);
-  stroke: #bf4857;
-  stroke-width: 2.8;
-  filter: drop-shadow(0 2px 1px rgba(110,40,20,.06));
-}
 
-/* Fat marble flecks */
-.marble ellipse {
-  fill: #faf2ee;
-  opacity: 0.82;
-  stroke: #fff;
-  stroke-width: 0.7;
-}
+
 
 
 
