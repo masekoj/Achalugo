@@ -282,12 +282,6 @@ footer p {
   stroke-width: 0.7;
 }
 
-/* SVG gradient definition for sausages */
-svg defs {
-  /* Not supported directly in CSS, you should place this <defs> block inside your <svg> */
-}
-/* If you move the SVG to your main HTML, include this <defs> inside the SVG: */
-
 
 
 
