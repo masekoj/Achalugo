@@ -15,7 +15,7 @@ jobs:
             uses: actions/checkout@v6 
 
             # setup nodejs
-            -name: setup Node.js
+            -name: setup Node
             uses: actions/setup-node@v6
             with: 
               node-version: v24.11.1     
