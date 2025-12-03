@@ -1,29 +1,22 @@
-name: Deploy React App
-
+name: build and deploy a lovable react app
 on:
   push:
     branches:
       - main
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v6.0.1
-
       - name: Setup Node.js environment
         uses: actions/setup-node@v6.1.0
         with:
           node-version: 'v24.11.1'
-
       - name: Install dependencies
         run: npm install
-
       - name: Build React app
         run: npm run build
-
       - name: Deploy GitHub Pages site
         uses: actions/deploy-pages@v4.0.5
         with:
