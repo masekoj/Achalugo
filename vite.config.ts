@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json']},
+      extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],
       optimizeDeps: {
     include: ['@tanstack/react-query', 'react-router-dom'],
   },
