@@ -17,7 +17,7 @@ export default defineConfig(({ mode }) => ({
       extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json']
       optimizeDeps: {
     include: ['@tanstack/react-query', 'react-router-dom'],
-  }
+  },
     },
   },
 }));
