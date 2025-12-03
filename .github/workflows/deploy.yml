@@ -3,18 +3,18 @@ name: Deploy React App
 on:
   push:
     branches:
-      - main # Trigger on pushes to the main branch
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
+      - name: Checkout
+        uses: actions/checkout@v6.0.1
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v6.1.0
         with:
           node-version: 'v24.11.1'
 
@@ -24,8 +24,8 @@ jobs:
       - name: Build React app
         run: npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Deploy GitHub Pages site
+        uses: actions/deploy-pages@v4.0.5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
