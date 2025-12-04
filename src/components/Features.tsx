@@ -1,5 +1,5 @@
 import { Heart, Sparkles, DollarSign } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { card, CardContent } from "@/components/ui/Card";
 
 export const Features = () => {
   const features = [
