@@ -1,5 +1,5 @@
 import { Phone, MapPin, Clock, Mail } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { button } from "@/components/ui/Button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
