@@ -1,9 +1,9 @@
 import { Phone, MapPin, Clock, Mail } from "lucide-react";
 import { button } from "@/components/ui/Button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
+import { input } from "@/components/ui/Input";
+import { textarea } from "@/components/ui/Textarea";
+import { useToast } from "@/hooks/Use-toast";
 
 export const Contact = () => {
   const { toast } = useToast();
